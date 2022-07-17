@@ -14,14 +14,16 @@ for i in range(4):
     t.left(90)
 t.end_fill()
 
-# creates four cicles at the squares four corners
+# creates four semicicles at the square's four corners
 t.color("darkorchid4")
-for x, y in [[-200, -200], [200, -200], [200, 100], [-200, 100]]:
+for x, y in [[-200, -85.5], [200, -200], [-200, 200], [200, 85.5]]:
     t.penup()
     t.goto(x, y)
     t.pendown()
     t.begin_fill()
-    t.circle(50)
+    for x in range(180):
+        t.forward(1)
+        t.right(1)
     t.end_fill()
 
 turtle.done()
