@@ -16,20 +16,22 @@ def rectangle(color):
         t.forward(height)
         t.left(90)
     t.end_fill()
+    return t
+
+t.penup()
+t.goto((-1.5)*strips_width, -100) # moved the turtle to the blue strips lowest left corner
+t.pendown()
 
 rectangle("blue")
 t.penup()
-t.goto(strips_width, 0)
+t.goto((-0.5)*strips_width, -100) # moved the turtle to the white strips lowest left corner
 t.pendown()
 
 rectangle("white")
 t.penup()
-t.goto(2*strips_width, 0)
+t.goto(0.5*strips_width, -100) # moved the turtle to the red strips lowest left corner
 t.pendown()
 
 rectangle("red")
-t.penup()
-t.goto(3*strips_width, 0)
-t.pendown()
 
 turtle.done()
