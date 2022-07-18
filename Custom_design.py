@@ -1,6 +1,7 @@
 import turtle
 
 t = turtle.Turtle()
+t.hideturtle()
 
 t.penup()
 t.goto(-200, -200)
