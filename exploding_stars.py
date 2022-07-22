@@ -8,7 +8,7 @@ t.bgcolor("black")
 a = 0
 b = 0
 
-for i in range(22):
+for i in range(8):
     
     x_locations = list(range(1,401))
     y_locations = list(range(1,401))
@@ -17,6 +17,10 @@ for i in range(22):
     x_location = r.choice(x_locations)
     y_location = r.choice(y_locations)
     color = r.choice(colors)
+
+    x_locations = x_locations.remove(x_location)
+    y_locations = y_locations.remove(y_location)
+    colors = colors.remove(color)
 
     t.penup()
     t.goto(x_location, y_location)
@@ -35,9 +39,5 @@ for i in range(22):
 
         if b == 110:
             break
-    
-    x_locations = x_locations.remove(x_location)
-    y_locations = y_locations.remove(y_location)
-    colors = colors.remove(color)
 
 t.done()
