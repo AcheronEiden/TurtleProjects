@@ -1,4 +1,4 @@
-# the file is named scanner because the final shape reminds me of an scanner scanning an object (like a planet)
+# the file is named scanner because the final shape reminds me of a scanner scanning an object (like a planet)
 
 import turtle as t
 
